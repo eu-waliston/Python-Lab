@@ -3,4 +3,4 @@ from bs4 import BeautifulSoup
 
 html = urlopen('https://www.ufsm.br')
 bs = BeautifulSoup(html.read(), 'html.parser')
-print(bs.h1)
+print(bs.body.p) #Responsável por ´FILTRAR´ a busca dentro dos sites
